@@ -33,7 +33,7 @@ class AuthController extends Controller
     public function logout()
     {
         Auth::guard('admin')->logout();
-        return redirect('/admin/login')->with('alert', [
+        return view('auth.login')->with('alert', [
             'message' => 'Success',
             'detail' => 'You have been logged out successfully.'
         ]);

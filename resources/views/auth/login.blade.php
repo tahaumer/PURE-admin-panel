@@ -19,7 +19,7 @@
                 <img width="450" src="{{ asset('media/logo.svg') }}" alt="">
                 <p class="text-lg font-normal">Enter email and password to log In.</p>
             </div>
-            <form action="{{ route('login') }}" method="POST" class="mt-8 mb-2 mx-auto w-80 max-w-screen-lg lg:w-1/2">
+            <form action="{{ route('admin.login') }}" method="POST" class="mt-8 mb-2 mx-auto w-80 max-w-screen-lg lg:w-1/2">
                 @csrf
                 <div class="flex flex-col gap-6">
                     <label class="-mb-3 font-medium"> Email </label>
