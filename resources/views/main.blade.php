@@ -11,13 +11,14 @@
     <meta name="creator" content="Taha Umar" />
     @stack('style')
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/sidebar.css') }}" rel="stylesheet">
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 
 <body>
     
     @yield('content')
-    <script src="{{ asset('js/jquery.js') }}"></script>
+    <script src="{{ asset('js/app.js') }}"></script>
     <script src="{{ asset('js/app.obfuscated.js') }}"></script>
     @stack('script')
 </body>

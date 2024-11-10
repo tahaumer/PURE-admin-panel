@@ -13,6 +13,7 @@
    <x-alert/>
 @endif
 
+@include('inc.head')
 <div>
     Welcome Admin
     <form action="{{ route('admin.logout') }}" method="POST">
